@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tuneup-logo {
+  position: relative;
+  width: 160px;
+  height: 40px;
+  display: flex;
+  gap: 4px;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.tuneup-logo.collapsed {
+  width: 20px;
+}
+
+.tuneup-logo .pixel {
+  width: 1px;
+  height: 4px;
+  background: #f3f3c6;
+  box-shadow: 0 0 2px rgba(243, 243, 198, 0.3);
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+/* T */
+.tuneup-logo .t1 { left: 0; top: 0; width: 20px; height: 4px; }
+.tuneup-logo .t2 { left: 8px; top: 4px; width: 4px; height: 36px; }
+
+/* U */
+.tuneup-logo .u1 { left: 28px; top: 0; width: 4px; height: 36px; }
+.tuneup-logo .u2 { left: 32px; top: 32px; width: 12px; height: 4px; }
+.tuneup-logo .u3 { left: 44px; top: 0; width: 4px; height: 36px; }
+
+/* N */
+.tuneup-logo .n1 { left: 56px; top: 0; width: 4px; height: 36px; }
+.tuneup-logo .n2 { left: 60px; top: 0; width: 12px; height: 4px; }
+.tuneup-logo .n3 { left: 72px; top: 0; width: 4px; height: 36px; }
+
+/* E */
+.tuneup-logo .e1 { left: 84px; top: 0; width: 20px; height: 4px; }
+.tuneup-logo .e2 { left: 84px; top: 4px; width: 4px; height: 32px; }
+.tuneup-logo .e3 { left: 84px; top: 16px; width: 16px; height: 4px; }
+.tuneup-logo .e4 { left: 84px; top: 32px; width: 20px; height: 4px; }
+
+/* U */
+.tuneup-logo .u4 { left: 112px; top: 0; width: 4px; height: 36px; }
+.tuneup-logo .u5 { left: 116px; top: 32px; width: 12px; height: 4px; }
+.tuneup-logo .u6 { left: 128px; top: 0; width: 4px; height: 36px; }
+
+/* P */
+.tuneup-logo .p1 { left: 140px; top: 0; width: 4px; height: 36px; }
+.tuneup-logo .p2 { left: 144px; top: 0; width: 12px; height: 4px; }
+.tuneup-logo .p3 { left: 156px; top: 4px; width: 4px; height: 12px; }
+.tuneup-logo .p4 { left: 144px; top: 16px; width: 12px; height: 4px; }
+
+.tuneup-logo:hover .pixel {
+  box-shadow: 0 0 8px rgba(243, 243, 198, 0.6);
+  transform: scale(1.1);
+}
